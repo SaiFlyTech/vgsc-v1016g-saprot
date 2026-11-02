@@ -1,0 +1,627 @@
+{
+ "overall, resistant vs no effect": {
+  "task": "overall, resistant vs no effect",
+  "feature": "score",
+  "n": 13,
+  "n_pos": 8,
+  "n_neg": 5,
+  "n_positions": 10,
+  "auc": 0.9125,
+  "n_pairs": 40,
+  "auc_step": 0.025,
+  "perm_p": 0.006216006216006216,
+  "perm_total": 1287,
+  "perm_exact": true,
+  "loo_correct": 11,
+  "loo_n": 13,
+  "loo_acc": 0.8461538461538461,
+  "loo_ci": [
+   0.5455289443234421,
+   0.9807933280174715
+  ],
+  "majority_baseline": 0.6153846153846154,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 1,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "A1007G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -4.001
+   },
+   {
+    "name": "I1011M",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -2.926
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 1,
+    "threshold": -2.926
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "F1534C",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   }
+  ]
+ },
+ "overall, resistant vs no effect (BLOSUM62)": {
+  "task": "overall, resistant vs no effect (BLOSUM62)",
+  "feature": "blosum",
+  "n": 13,
+  "n_pos": 8,
+  "n_neg": 5,
+  "n_positions": 10,
+  "auc": 0.65,
+  "n_pairs": 40,
+  "auc_step": 0.025,
+  "perm_p": 0.2198912198912199,
+  "perm_total": 1287,
+  "perm_exact": true,
+  "loo_correct": 9,
+  "loo_n": 13,
+  "loo_acc": 0.6923076923076923,
+  "loo_ci": [
+   0.38573833824929454,
+   0.9090796054279034
+  ],
+  "majority_baseline": 0.6153846153846154,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "A1007G",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "I1011M",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 0,
+    "threshold": 2.0
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "F1534C",
+    "true": 1,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 1,
+    "threshold": -1.5
+   }
+  ]
+ },
+ "Type I pyrethroids": {
+  "task": "Type I pyrethroids",
+  "feature": "score",
+  "n": 13,
+  "n_pos": 7,
+  "n_neg": 6,
+  "n_positions": 10,
+  "auc": 1.0,
+  "n_pairs": 42,
+  "auc_step": 0.023809523809523808,
+  "perm_p": 0.0005827505827505828,
+  "perm_total": 1716,
+  "perm_exact": true,
+  "loo_correct": 12,
+  "loo_n": 13,
+  "loo_acc": 0.9230769230769231,
+  "loo_ci": [
+   0.6397025647321224,
+   0.9980543715026533
+  ],
+  "majority_baseline": 0.5384615384615384,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "A1007G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -4.001
+   },
+   {
+    "name": "I1011M",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -2.926
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 1,
+    "threshold": -2.926
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   },
+   {
+    "name": "F1534C",
+    "true": 1,
+    "pred": 1,
+    "threshold": -3.497
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 0,
+    "threshold": -3.497
+   }
+  ]
+ },
+ "Type I pyrethroids (BLOSUM62)": {
+  "task": "Type I pyrethroids (BLOSUM62)",
+  "feature": "blosum",
+  "n": 13,
+  "n_pos": 7,
+  "n_neg": 6,
+  "n_positions": 10,
+  "auc": 0.6428571428571429,
+  "n_pairs": 42,
+  "auc_step": 0.023809523809523808,
+  "perm_p": 0.21678321678321677,
+  "perm_total": 1716,
+  "perm_exact": true,
+  "loo_correct": 6,
+  "loo_n": 13,
+  "loo_acc": 0.46153846153846156,
+  "loo_ci": [
+   0.19223244180128787,
+   0.7486545177296965
+  ],
+  "majority_baseline": 0.5384615384615384,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 0,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "A1007G",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "I1011M",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 1,
+    "threshold": 2.0
+   },
+   {
+    "name": "F1534C",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 1,
+    "threshold": -1.5
+   }
+  ]
+ },
+ "Type II pyrethroids": {
+  "task": "Type II pyrethroids",
+  "feature": "score",
+  "n": 13,
+  "n_pos": 5,
+  "n_neg": 8,
+  "n_positions": 10,
+  "auc": 0.7875,
+  "n_pairs": 40,
+  "auc_step": 0.025,
+  "perm_p": 0.048174048174048176,
+  "perm_total": 1287,
+  "perm_exact": true,
+  "loo_correct": 8,
+  "loo_n": 13,
+  "loo_acc": 0.6153846153846154,
+  "loo_ci": [
+   0.3157776029140629,
+   0.8614206611098394
+  ],
+  "majority_baseline": 0.6153846153846154,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 0,
+    "threshold": -7.343
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 1,
+    "threshold": -6.526
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 1,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "A1007G",
+    "true": 0,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "I1011M",
+    "true": 0,
+    "pred": 1,
+    "threshold": -4.564
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -4.564
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -6.526
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -6.526
+   },
+   {
+    "name": "F1534C",
+    "true": 0,
+    "pred": 1,
+    "threshold": -4.564
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 0,
+    "threshold": -6.526
+   }
+  ]
+ },
+ "Type II pyrethroids (BLOSUM62)": {
+  "task": "Type II pyrethroids (BLOSUM62)",
+  "feature": "blosum",
+  "n": 13,
+  "n_pos": 5,
+  "n_neg": 8,
+  "n_positions": 10,
+  "auc": 0.725,
+  "n_pairs": 40,
+  "auc_step": 0.025,
+  "perm_p": 0.11266511266511267,
+  "perm_total": 1287,
+  "perm_exact": true,
+  "loo_correct": 7,
+  "loo_n": 13,
+  "loo_acc": 0.5384615384615384,
+  "loo_ci": [
+   0.25134548227030346,
+   0.807767558198712
+  ],
+  "majority_baseline": 0.6153846153846154,
+  "predictions": [
+   {
+    "name": "V410L",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "G923V",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "L982W",
+    "true": 1,
+    "pred": 0,
+    "threshold": -2.5
+   },
+   {
+    "name": "S989P",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "S989P_AaNavS2",
+    "true": 1,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "A1007G",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "I1011M",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "I1011V",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "V1016G",
+    "true": 1,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "V1016I",
+    "true": 0,
+    "pred": 0,
+    "threshold": -1.5
+   },
+   {
+    "name": "T1520I",
+    "true": 0,
+    "pred": 1,
+    "threshold": -0.5
+   },
+   {
+    "name": "F1534C",
+    "true": 0,
+    "pred": 1,
+    "threshold": -1.5
+   },
+   {
+    "name": "D1763Y",
+    "true": 0,
+    "pred": 1,
+    "threshold": -1.5
+   }
+  ]
+ },
+ "other_species": {
+  "auc": 0.6727272727272727,
+  "n_pairs": 55,
+  "n_pos": 11,
+  "n_neg": 5,
+  "below_all": 5
+ },
+ "combinations": {
+  "auc": 0.1,
+  "n_pairs": 15,
+  "n_stronger": 5,
+  "n_same": 3
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "overall | trained: embedding (mutant)": {
+  "auc": 0.2875,
+  "acc": 0.46153846153846156,
+  "n": 13
+ },
+ "overall | trained: embedding change (mut - wt)": {
+  "auc": 0.5625,
+  "acc": 0.5384615384615384,
+  "n": 13
+ },
+ "overall | zero-shot": {
+  "auc": 0.9125
+ },
+ "Type I | trained: embedding (mutant)": {
+  "auc": 0.30952380952380953,
+  "acc": 0.38461538461538464,
+  "n": 13
+ },
+ "Type I | trained: embedding change (mut - wt)": {
+  "auc": 0.6428571428571429,
+  "acc": 0.5384615384615384,
+  "n": 13
+ },
+ "Type I | zero-shot": {
+  "auc": 1.0
+ },
+ "Type II | trained: embedding (mutant)": {
+  "auc": 0.1875,
+  "acc": 0.38461538461538464,
+  "n": 13
+ },
+ "Type II | trained: embedding change (mut - wt)": {
+  "auc": 0.0375,
+  "acc": 0.5384615384615384,
+  "n": 13
+ },
+ "Type II | zero-shot": {
+  "auc": 0.7875
+ }
+}

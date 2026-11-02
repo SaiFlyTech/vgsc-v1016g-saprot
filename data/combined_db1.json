@@ -1,0 +1,864 @@
+{
+ "db": "db1",
+ "variants": [
+  {
+   "name": "V253F",
+   "kind": "single",
+   "label": "hold",
+   "group": "aedes",
+   "position": 253,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "review_only",
+   "score": -2.807492733001709,
+   "additive": -2.807492733001709,
+   "joint": -2.807492733001709,
+   "epistasis": 0.0,
+   "members": [
+    "V253F"
+   ],
+   "source": "Parasites and Vectors 2025 review, s13071-025-07010-8"
+  },
+  {
+   "name": "V410L",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 410,
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": -5.068783596158028,
+   "additive": -5.068783596158028,
+   "joint": -5.068783596158028,
+   "epistasis": 0.0,
+   "members": [
+    "V410L"
+   ],
+   "source": "Haddi 2017, Sci Rep, PMC5396194"
+  },
+  {
+   "name": "G923V",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 923,
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -7.248395709320903,
+   "additive": -7.248395709320903,
+   "joint": -7.248395709320903,
+   "epistasis": 0.0,
+   "members": [
+    "G923V"
+   ],
+   "source": "Zhang 2024, ScienceDirect S004835752400227X"
+  },
+  {
+   "name": "L982W",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 982,
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -12.131454839371145,
+   "additive": -12.131454839371145,
+   "joint": -12.131454839371145,
+   "epistasis": 0.0,
+   "members": [
+    "L982W"
+   ],
+   "source": "Chen 2023, PubMed 37532317"
+  },
+  {
+   "name": "S989P",
+   "kind": "single",
+   "label": "no_effect",
+   "group": "aedes",
+   "position": 989,
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": -0.3083047866821289,
+   "additive": -0.3083047866821289,
+   "joint": -0.3083047866821289,
+   "epistasis": 0.0,
+   "members": [
+    "S989P"
+   ],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "S989P_AaNavS2",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 989,
+   "type_I": "no_effect",
+   "type_II": "resistant",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": -0.3083047866821289,
+   "additive": -0.3083047866821289,
+   "joint": -0.3083047866821289,
+   "epistasis": 0.0,
+   "members": [
+    "S989P_AaNavS2"
+   ],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "A1007G",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 1007,
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": -4.0596843957901,
+   "additive": -4.0596843957901,
+   "joint": -4.0596843957901,
+   "epistasis": 0.0,
+   "members": [
+    "A1007G"
+   ],
+   "source": "Pest Manag Sci 2025, PubMed 39740097"
+  },
+  {
+   "name": "I1011M",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 1011,
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -5.803961902856827,
+   "additive": -5.803961902856827,
+   "joint": -5.803961902856827,
+   "epistasis": 0.0,
+   "members": [
+    "I1011M"
+   ],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "I1011V",
+   "kind": "single",
+   "label": "no_effect",
+   "group": "aedes",
+   "position": 1011,
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": -1.7919225990772247,
+   "additive": -1.7919225990772247,
+   "joint": -1.7919225990772247,
+   "epistasis": 0.0,
+   "members": [
+    "I1011V"
+   ],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "V1016G",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 1016,
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -8.881474867463112,
+   "additive": -8.881474867463112,
+   "joint": -8.881474867463112,
+   "epistasis": 0.0,
+   "members": [
+    "V1016G"
+   ],
+   "source": "Dong and Nomura 2016; Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "V1016I",
+   "kind": "single",
+   "label": "no_effect",
+   "group": "aedes",
+   "position": 1016,
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -2.933617487549782,
+   "additive": -2.933617487549782,
+   "joint": -2.933617487549782,
+   "epistasis": 0.0,
+   "members": [
+    "V1016I"
+   ],
+   "source": "Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "T1520I",
+   "kind": "single",
+   "label": "no_effect",
+   "group": "aedes",
+   "position": 1520,
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "ddt": "no_effect",
+   "evidence": "oocyte",
+   "score": -1.0514469146728516,
+   "additive": -1.0514469146728516,
+   "joint": -1.0514469146728516,
+   "epistasis": 0.0,
+   "members": [
+    "T1520I"
+   ],
+   "source": "Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "F1534C",
+   "kind": "single",
+   "label": "resistant",
+   "group": "aedes",
+   "position": 1534,
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "ddt": "resistant",
+   "evidence": "oocyte",
+   "score": -5.678470492362976,
+   "additive": -5.678470492362976,
+   "joint": -5.678470492362976,
+   "epistasis": 0.0,
+   "members": [
+    "F1534C"
+   ],
+   "source": "Dong and Nomura 2016; Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "D1763Y",
+   "kind": "single",
+   "label": "no_effect",
+   "group": "aedes",
+   "position": 1763,
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte",
+   "score": 0.015337944030761719,
+   "additive": 0.015337944030761719,
+   "joint": 0.015337944030761719,
+   "epistasis": 0.0,
+   "members": [
+    "D1763Y"
+   ],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "E435K",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 435,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -0.5553073883056641,
+   "additive": -0.5553073883056641,
+   "joint": -0.5553073883056641,
+   "epistasis": 0.0,
+   "members": [
+    "E435K"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "C785R",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 785,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -1.000375747680664,
+   "additive": -1.000375747680664,
+   "joint": -1.000375747680664,
+   "epistasis": 0.0,
+   "members": [
+    "C785R"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "M827I",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 827,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -0.4924573302268982,
+   "additive": -0.4924573302268982,
+   "joint": -0.4924573302268982,
+   "epistasis": 0.0,
+   "members": [
+    "M827I"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "M918T",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 918,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -6.038217782974243,
+   "additive": -6.038217782974243,
+   "joint": -6.038217782974243,
+   "epistasis": 0.0,
+   "members": [
+    "M918T"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "L925I",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 925,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -4.902672594413161,
+   "additive": -4.902672594413161,
+   "joint": -4.902672594413161,
+   "epistasis": 0.0,
+   "members": [
+    "L925I"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "T929I",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 929,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -6.735464825294912,
+   "additive": -6.735464825294912,
+   "joint": -6.735464825294912,
+   "epistasis": 0.0,
+   "members": [
+    "T929I"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "L932F",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 932,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -3.80290512368083,
+   "additive": -3.80290512368083,
+   "joint": -3.80290512368083,
+   "epistasis": 0.0,
+   "members": [
+    "L932F"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "I936V",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 936,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -0.6727829575538635,
+   "additive": -0.6727829575538635,
+   "joint": -0.6727829575538635,
+   "epistasis": 0.0,
+   "members": [
+    "I936V"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "L1014F",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 1014,
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": 1.4694061577320099,
+   "additive": 1.4694061577320099,
+   "joint": 1.4694061577320099,
+   "epistasis": 0.0,
+   "members": [
+    "L1014F"
+   ],
+   "source": "Dong lab review chapter, PMC6005695, Fig 5.3A"
+  },
+  {
+   "name": "F1534S",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 1534,
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -8.563440680503845,
+   "additive": -8.563440680503845,
+   "joint": -8.563440680503845,
+   "epistasis": 0.0,
+   "members": [
+    "F1534S"
+   ],
+   "source": "Yan 2020, ScienceDirect S0965174820301004, via Pichler 2024 review"
+  },
+  {
+   "name": "F1534L",
+   "kind": "single",
+   "label": "resistant",
+   "group": "other_species",
+   "position": 1534,
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "ddt": "not_tested",
+   "evidence": "oocyte_other_species",
+   "score": -2.6045502424240112,
+   "additive": -2.6045502424240112,
+   "joint": -2.6045502424240112,
+   "epistasis": 0.0,
+   "members": [
+    "F1534L"
+   ],
+   "source": "Yan 2020, ScienceDirect S0965174820301004, via Pichler 2024 review"
+  },
+  {
+   "name": "V410L+F1534C",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    410,
+    1534
+   ],
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "vs_singles": "same",
+   "members": [
+    "V410L",
+    "F1534C"
+   ],
+   "additive": -10.747254088521004,
+   "joint": -10.747254088521004,
+   "epistasis": 0.0,
+   "score": -10.747254088521004,
+   "interaction_forced_zero": true,
+   "observed_in": [],
+   "source": "Haddi 2017, Sci Rep, PMC5396194"
+  },
+  {
+   "name": "V1016I+F1534C",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    1016,
+    1534
+   ],
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "vs_singles": "stronger",
+   "members": [
+    "V1016I",
+    "F1534C"
+   ],
+   "additive": -8.612087979912758,
+   "joint": -8.612087979912758,
+   "epistasis": 0.0,
+   "score": -8.612087979912758,
+   "interaction_forced_zero": true,
+   "observed_in": [],
+   "source": "Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "T1520I+F1534C",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    1520,
+    1534
+   ],
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "vs_singles": "stronger",
+   "members": [
+    "T1520I",
+    "F1534C"
+   ],
+   "additive": -6.729917407035828,
+   "joint": -6.715310111641884,
+   "epistasis": 0.014607295393943787,
+   "score": -6.715310111641884,
+   "interaction_forced_zero": false,
+   "observed_in": [],
+   "source": "Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "S989P+V1016G",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    989,
+    1016
+   ],
+   "type_I": "not_tested",
+   "type_II": "resistant",
+   "vs_singles": "stronger",
+   "members": [
+    "S989P",
+    "V1016G"
+   ],
+   "additive": -9.18977965414524,
+   "joint": -8.778171718120575,
+   "epistasis": 0.41160793602466583,
+   "score": -8.778171718120575,
+   "interaction_forced_zero": false,
+   "observed_in": [],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "S989P+V1016G+F1534C",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    989,
+    1016,
+    1534
+   ],
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "vs_singles": "stronger",
+   "members": [
+    "S989P",
+    "V1016G",
+    "F1534C"
+   ],
+   "additive": -14.868250146508217,
+   "joint": -14.456642210483551,
+   "epistasis": 0.41160793602466583,
+   "score": -14.456642210483551,
+   "interaction_forced_zero": true,
+   "observed_in": [],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "D1763Y+V1016G",
+   "kind": "combination",
+   "label": "no_effect",
+   "group": "aedes",
+   "positions": [
+    1763,
+    1016
+   ],
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "vs_singles": "same",
+   "members": [
+    "D1763Y",
+    "V1016G"
+   ],
+   "additive": -8.86613692343235,
+   "joint": -8.86613692343235,
+   "epistasis": 0.0,
+   "score": -8.86613692343235,
+   "interaction_forced_zero": true,
+   "observed_in": [],
+   "source": "Dong and Nomura 2016, Insects 7(4):60"
+  },
+  {
+   "name": "L982W+F1534C",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    982,
+    1534
+   ],
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "vs_singles": "same",
+   "members": [
+    "L982W",
+    "F1534C"
+   ],
+   "additive": -17.80992533173412,
+   "joint": -17.80992533173412,
+   "epistasis": 0.0,
+   "score": -17.80992533173412,
+   "interaction_forced_zero": true,
+   "observed_in": [],
+   "source": "Chen 2023, PubMed 37532317"
+  },
+  {
+   "name": "G923V+I1011M",
+   "kind": "combination",
+   "label": "resistant",
+   "group": "aedes",
+   "positions": [
+    923,
+    1011
+   ],
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "vs_singles": "stronger",
+   "members": [
+    "G923V",
+    "I1011M"
+   ],
+   "additive": -13.05235761217773,
+   "joint": -13.019893204793334,
+   "epistasis": 0.0324644073843956,
+   "score": -13.019893204793334,
+   "interaction_forced_zero": false,
+   "observed_in": [],
+   "source": "Zhang 2024, ScienceDirect S004835752400227X"
+  },
+  {
+   "name": "R52H",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 52,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -1.6804547309875488,
+   "additive": -1.6804547309875488,
+   "joint": -1.6804547309875488,
+   "epistasis": 0.0,
+   "members": [
+    "R52H"
+   ],
+   "source": "Taiwan 2026, PLoS NTD pntd.0014393"
+  },
+  {
+   "name": "N868D",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 868,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "selection",
+   "score": -10.00160235632211,
+   "additive": -10.00160235632211,
+   "joint": -10.00160235632211,
+   "epistasis": 0.0,
+   "members": [
+    "N868D"
+   ],
+   "source": "Taiwan 2026, PLoS NTD pntd.0014393"
+  },
+  {
+   "name": "V410A",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 410,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -8.598587349057198,
+   "additive": -8.598587349057198,
+   "joint": -8.598587349057198,
+   "epistasis": 0.0,
+   "members": [
+    "V410A"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "V410G",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 410,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -10.38510163128376,
+   "additive": -10.38510163128376,
+   "joint": -10.38510163128376,
+   "epistasis": 0.0,
+   "members": [
+    "V410G"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "S989Y",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 989,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -7.960676670074463,
+   "additive": -7.960676670074463,
+   "joint": -7.960676670074463,
+   "epistasis": 0.0,
+   "members": [
+    "S989Y"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "S1000Y",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 1000,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -1.055381417274475,
+   "additive": -1.055381417274475,
+   "joint": -1.055381417274475,
+   "epistasis": 0.0,
+   "members": [
+    "S1000Y"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "I1532T",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 1532,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -9.11194159463048,
+   "additive": -9.11194159463048,
+   "joint": -9.11194159463048,
+   "epistasis": 0.0,
+   "members": [
+    "I1532T"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "F1534R",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 1534,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -13.472224593162537,
+   "additive": -13.472224593162537,
+   "joint": -13.472224593162537,
+   "epistasis": 0.0,
+   "members": [
+    "F1534R"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "F1534W",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 1534,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -10.37322747707367,
+   "additive": -10.37322747707367,
+   "joint": -10.37322747707367,
+   "epistasis": 0.0,
+   "members": [
+    "F1534W"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  },
+  {
+   "name": "F1534I",
+   "kind": "single",
+   "label": "none",
+   "group": "field_only",
+   "position": 1534,
+   "type_I": null,
+   "type_II": null,
+   "ddt": null,
+   "evidence": "field",
+   "score": -2.4171818494796753,
+   "additive": -2.4171818494796753,
+   "joint": -2.4171818494796753,
+   "epistasis": 0.0,
+   "members": [
+    "F1534I"
+   ],
+   "source": "Pichler 2024, PMC11078580"
+  }
+ ]
+}

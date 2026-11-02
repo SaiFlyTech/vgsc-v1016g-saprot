@@ -1,0 +1,477 @@
+{
+ "reference": "C3RTM2_AaegL5_VGSC_wildtype",
+ "window_residues": 500,
+ "positions": {
+  "52": {
+   "seq": 62,
+   "wt": "R",
+   "segment": "N-terminus",
+   "site": "none",
+   "flank": "KKKEIRYDDED"
+  },
+  "253": {
+   "seq": 263,
+   "wt": "V",
+   "segment": "IS4-S5 linker",
+   "site": "PyR2",
+   "flank": "TIVGAVIESVK"
+  },
+  "410": {
+   "seq": 419,
+   "wt": "V",
+   "segment": "IS6",
+   "site": "PyR2",
+   "flank": "GSFYLVNLILA"
+  },
+  "435": {
+   "seq": 444,
+   "wt": "E",
+   "segment": "IS6 region",
+   "site": "none",
+   "flank": "EEEAAEEEALR"
+  },
+  "785": {
+   "seq": 785,
+   "wt": "C",
+   "segment": "IIS1-S2 region",
+   "site": "none",
+   "flank": "FCVWDCCWVWL"
+  },
+  "827": {
+   "seq": 827,
+   "wt": "M",
+   "segment": "IIS4 region",
+   "site": "none",
+   "flank": "LDHHDMDPDME"
+  },
+  "868": {
+   "seq": 868,
+   "wt": "N",
+   "segment": "IIS5 region",
+   "site": "none",
+   "flank": "FQEGWNIFDFI"
+  },
+  "918": {
+   "seq": 918,
+   "wt": "M",
+   "segment": "IIS4-S5 linker",
+   "site": "none",
+   "flank": "LLISIMGRTMG"
+  },
+  "923": {
+   "seq": 923,
+   "wt": "G",
+   "segment": "IIS5 linker",
+   "site": "none",
+   "flank": "MGRTMGALGNL"
+  },
+  "925": {
+   "seq": 925,
+   "wt": "L",
+   "segment": "IIS5",
+   "site": "none",
+   "flank": "RTMGALGNLTF"
+  },
+  "929": {
+   "seq": 929,
+   "wt": "T",
+   "segment": "IIS5",
+   "site": "none",
+   "flank": "ALGNLTFVLCI"
+  },
+  "932": {
+   "seq": 932,
+   "wt": "L",
+   "segment": "IIS5",
+   "site": "none",
+   "flank": "NLTFVLCIIIF"
+  },
+  "936": {
+   "seq": 936,
+   "wt": "I",
+   "segment": "IIS5",
+   "site": "none",
+   "flank": "VLCIIIFIFAV"
+  },
+  "982": {
+   "seq": 982,
+   "wt": "L",
+   "segment": "IIS5-S6",
+   "site": "none",
+   "flank": "IVFRVLCGEWI"
+  },
+  "989": {
+   "seq": 989,
+   "wt": "S",
+   "segment": "IIS6",
+   "site": "none",
+   "flank": "GEWIESMWDCM"
+  },
+  "1000": {
+   "seq": 1000,
+   "wt": "S",
+   "segment": "IIS6",
+   "site": "none",
+   "flank": "LVGDVSCIPFF"
+  },
+  "1007": {
+   "seq": 1007,
+   "wt": "A",
+   "segment": "IIS6",
+   "site": "PyR2",
+   "flank": "IPFFLATVVIG"
+  },
+  "1011": {
+   "seq": 1011,
+   "wt": "I",
+   "segment": "IIS6",
+   "site": "PyR2",
+   "flank": "LATVVIGNLVV"
+  },
+  "1014": {
+   "seq": 1014,
+   "wt": "L",
+   "segment": "IIS6",
+   "site": "none",
+   "flank": "VVIGNLVVLNL"
+  },
+  "1016": {
+   "seq": 1016,
+   "wt": "V",
+   "segment": "IIS6",
+   "site": "PyR1",
+   "flank": "IGNLVVLNLFL"
+  },
+  "1520": {
+   "seq": 1544,
+   "wt": "T",
+   "segment": "IIIS6 start",
+   "site": "none",
+   "flank": "QPIRETNIYMY"
+  },
+  "1532": {
+   "seq": 1556,
+   "wt": "I",
+   "segment": "IIIS6",
+   "site": "none",
+   "flank": "YFVFFIIFGSF"
+  },
+  "1534": {
+   "seq": 1558,
+   "wt": "F",
+   "segment": "IIIS6",
+   "site": "PyR1",
+   "flank": "VFFIIFGSFFT"
+  },
+  "1763": {
+   "seq": 1787,
+   "wt": "D",
+   "segment": "linker III-IV",
+   "site": "none",
+   "flank": "FMHVKDKSGLD"
+  }
+ },
+ "tier": "observed",
+ "combinations": [
+  {
+   "name": "V410L+F1534C",
+   "members": [
+    "V410L",
+    "F1534C"
+   ],
+   "edits": [
+    {
+     "seq_position": 419,
+     "wt": "V",
+     "mut": "L",
+     "position": 410,
+     "name": "V410L"
+    },
+    {
+     "seq_position": 1558,
+     "wt": "F",
+     "mut": "C",
+     "position": 1534,
+     "name": "F1534C"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "same",
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "source": "Haddi 2017, Sci Rep, PMC5396194"
+  },
+  {
+   "name": "V1016I+F1534C",
+   "members": [
+    "V1016I",
+    "F1534C"
+   ],
+   "edits": [
+    {
+     "seq_position": 1016,
+     "wt": "V",
+     "mut": "I",
+     "position": 1016,
+     "name": "V1016I"
+    },
+    {
+     "seq_position": 1558,
+     "wt": "F",
+     "mut": "C",
+     "position": 1534,
+     "name": "F1534C"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "stronger",
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "source": "Hirata 2019, PLoS NTD pntd.0007432"
+  },
+  {
+   "name": "T1520I+F1534C",
+   "members": [
+    "T1520I",
+    "F1534C"
+   ],
+   "edits": [
+    {
+     "seq_position": 1544,
+     "wt": "T",
+     "mut": "I",
+     "position": 1520,
+     "name": "T1520I"
+    },
+    {
+     "seq_position": 1558,
+     "wt": "F",
+     "mut": "C",
+     "position": 1534,
+     "name": "F1534C"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "stronger",
+   "type_I": "resistant",
+   "type_II": "no_effect",
+   "source": "Hirata 2019, PLoS NTD pntd.0007432",
+   "observed_in": [
+    "india:SBVIC",
+    "taiwan:SVICD"
+   ]
+  },
+  {
+   "name": "S989P+V1016G",
+   "members": [
+    "S989P",
+    "V1016G"
+   ],
+   "edits": [
+    {
+     "seq_position": 989,
+     "wt": "S",
+     "mut": "P",
+     "position": 989,
+     "name": "S989P"
+    },
+    {
+     "seq_position": 1016,
+     "wt": "V",
+     "mut": "G",
+     "position": 1016,
+     "name": "V1016G"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "stronger",
+   "type_I": "not_tested",
+   "type_II": "resistant",
+   "source": "Dong and Nomura 2016, Insects 7(4):60",
+   "observed_in": [
+    "india:PAGTF",
+    "taiwan:PGTFD"
+   ]
+  },
+  {
+   "name": "S989P+V1016G+F1534C",
+   "members": [
+    "S989P",
+    "V1016G",
+    "F1534C"
+   ],
+   "edits": [
+    {
+     "seq_position": 989,
+     "wt": "S",
+     "mut": "P",
+     "position": 989,
+     "name": "S989P"
+    },
+    {
+     "seq_position": 1016,
+     "wt": "V",
+     "mut": "G",
+     "position": 1016,
+     "name": "V1016G"
+    },
+    {
+     "seq_position": 1558,
+     "wt": "F",
+     "mut": "C",
+     "position": 1534,
+     "name": "F1534C"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "stronger",
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "source": "Dong and Nomura 2016, Insects 7(4):60",
+   "observed_in": [
+    "taiwan:PGTCD"
+   ]
+  },
+  {
+   "name": "D1763Y+V1016G",
+   "members": [
+    "D1763Y",
+    "V1016G"
+   ],
+   "edits": [
+    {
+     "seq_position": 1787,
+     "wt": "D",
+     "mut": "Y",
+     "position": 1763,
+     "name": "D1763Y"
+    },
+    {
+     "seq_position": 1016,
+     "wt": "V",
+     "mut": "G",
+     "position": 1016,
+     "name": "V1016G"
+    }
+   ],
+   "origin": "measured",
+   "label": "no_effect",
+   "vs_singles": "same",
+   "type_I": "no_effect",
+   "type_II": "no_effect",
+   "source": "Dong and Nomura 2016, Insects 7(4):60",
+   "observed_in": [
+    "taiwan:SGTFY"
+   ]
+  },
+  {
+   "name": "L982W+F1534C",
+   "members": [
+    "L982W",
+    "F1534C"
+   ],
+   "edits": [
+    {
+     "seq_position": 982,
+     "wt": "L",
+     "mut": "W",
+     "position": 982,
+     "name": "L982W"
+    },
+    {
+     "seq_position": 1558,
+     "wt": "F",
+     "mut": "C",
+     "position": 1534,
+     "name": "F1534C"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "same",
+   "type_I": "resistant",
+   "type_II": "resistant",
+   "source": "Chen 2023, PubMed 37532317"
+  },
+  {
+   "name": "G923V+I1011M",
+   "members": [
+    "G923V",
+    "I1011M"
+   ],
+   "edits": [
+    {
+     "seq_position": 923,
+     "wt": "G",
+     "mut": "V",
+     "position": 923,
+     "name": "G923V"
+    },
+    {
+     "seq_position": 1011,
+     "wt": "I",
+     "mut": "M",
+     "position": 1011,
+     "name": "I1011M"
+    }
+   ],
+   "origin": "measured",
+   "label": "resistant",
+   "vs_singles": "stronger",
+   "type_I": "unknown",
+   "type_II": "unknown",
+   "source": "Zhang 2024, ScienceDirect S004835752400227X"
+  },
+  {
+   "name": "S989P+V1016G+D1763Y",
+   "members": [
+    "S989P",
+    "V1016G",
+    "D1763Y"
+   ],
+   "edits": [
+    {
+     "name": "S989P",
+     "position": 989,
+     "seq_position": 989,
+     "wt": "S",
+     "mut": "P"
+    },
+    {
+     "name": "V1016G",
+     "position": 1016,
+     "seq_position": 1016,
+     "wt": "V",
+     "mut": "G"
+    },
+    {
+     "name": "D1763Y",
+     "position": 1763,
+     "seq_position": 1787,
+     "wt": "D",
+     "mut": "Y"
+    }
+   ],
+   "origin": "field_haplotype",
+   "label": "none",
+   "observed_in": [
+    "taiwan:PGTFY"
+   ],
+   "count": null,
+   "freq": "0.25% to 5.21%",
+   "note": "first report in the species"
+  }
+ ],
+ "linkage_notes": [
+  "T1520I is only ever observed alongside F1534C, in both India and Taiwan.",
+  "D1763Y is only ever observed alongside V1016G.",
+  "S989P is only ever observed alongside V1016G.",
+  "India found no recombination among the V1016G, F1534L and F1534C haplogroups.",
+  "L982W, A1007G and I1011M were not detected at all in the Taiwanese survey."
+ ]
+}

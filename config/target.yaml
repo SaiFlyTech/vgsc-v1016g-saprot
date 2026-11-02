@@ -1,0 +1,42 @@
+# ============================================================================
+# Single-mutation target definition — Aedes aegypti VGSC, V1016G
+#
+# Source: kdr_vgsc_saprot_pipeline.pptx (reference deck), confirmed mutation
+# table, slide 2. This is a confirmed, oocyte-tested positive (resistant)
+# substitution — one of 5 confirmed Ae. aegypti positives.
+#
+# Method: zero-shot scoring (SaProt pretrained weights). NOT fine-tuning —
+# one labeled point is nowhere near enough data to train on, and isn't meant
+# to be; the deck's own design is "no training," evaluated instead by
+# rank-correlation once more labels are scored. With a single mutation, there
+# is no ranking to test yet — this run produces one score to sanity-check
+# the pipeline end-to-end before scaling up to the full confirmed set.
+# ============================================================================
+
+species: "Aedes aegypti"
+gene_id: "AAEL023266"          # VectorBase gene ID for VGSC
+genome_build: "AaegL5"         # numbering system the position below uses
+
+mutation:
+  position: 1016                # AaegL5 amino-acid numbering
+  wildtype_residue: "V"         # expected residue at this position
+  mutant_residue: "G"
+  name: "V1016G"
+  domain: "IIS6 / PyR1"
+  label: "resistant"            # confirmed via literature (deck slide 2)
+  effect_note: "Moderate resistance to both pyrethroid types; SE Asia populations"
+  evidence: "oocyte electrophysiology"
+
+scoring:
+  window_residues: 500          # ± residues around the mutation position
+                                 # (VGSC is ~2100 aa; SaProt's context can't
+                                 # take the full protein, per deck slide 3/4)
+  model: "SaProt-650M"
+  score_type: "masked-marginal"  # log P(mutant|context) - log P(wildtype|context)
+
+# Fill in once you've fetched the real sequence (step 01):
+sequence_source:
+  database: "VectorBase"         # or UniProt, whichever has the AAEL023266 protein record
+  accession: "TODO_FILL_IN"
+  verified_wildtype_match: false # script sets this true only after confirming
+                                  # seq[1016] == 'V' in the fetched sequence

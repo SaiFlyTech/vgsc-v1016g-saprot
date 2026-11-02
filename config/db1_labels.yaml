@@ -1,0 +1,459 @@
+# =============================================================================
+# DATABASE 1 - the labelled set
+# Aedes aegypti voltage-gated sodium channel, pyrethroid resistance
+# =============================================================================
+#
+# Every entry here has a laboratory measurement behind it. Field frequency is
+# NOT a label and is recorded separately at the bottom, under field_only.
+#
+# NUMBERING
+#   position      = the number used in the papers (house fly / Musca domestica
+#                   Vssc1, GenBank AAB47604)
+#   seq_position  = the same residue in UniProt C3RTM2 (Aedes aegypti, 2140 aa),
+#                   obtained by global alignment of Musca to C3RTM2 and checked
+#                   against the wild-type residue and its flanking sequence.
+#                   Offsets are +10 below 300, +9 at 410-435, 0 at 785-1016,
+#                   +24 at 1520-1763. The offset is NOT constant - never guess it.
+#
+# OUTCOME VALUES  (per insecticide class)
+#   resistant   - measured reduction in sensitivity
+#   no_effect   - measured, and no change in sensitivity
+#   not_tested  - the paper did not test this class
+#   unknown     - the paper reports an effect but not which class
+#
+# EVIDENCE GRADES (strongest first)
+#   oocyte                - site-directed mutant in a cloned mosquito channel,
+#                           expressed in Xenopus oocytes, two-electrode voltage clamp
+#   crispr                - change made in live mosquitoes
+#   oocyte_other_species  - same method, but a different insect's channel
+#   review_only           - a review states it was confirmed; primary paper not read
+#
+# TYPE I  = permethrin, bifenthrin, NRDC 157   (no alpha-cyano group)
+# TYPE II = deltamethrin, cypermethrin, beta-cyfluthrin   (alpha-cyano group)
+# =============================================================================
+
+reference: C3RTM2_AaegL5_VGSC_wildtype      # data/vgsc_wildtype.fasta, 2140 aa
+window_residues: 500                        # +/- residues around each site
+
+# ---------------------------------------------------------------------------
+# Verified position map. Every position used anywhere in databases 1, 2 and 3.
+# ---------------------------------------------------------------------------
+positions:
+  52:   {seq: 62,   wt: R, segment: "N-terminus",      site: none}
+  253:  {seq: 263,  wt: V, segment: "IS4-S5 linker",   site: PyR2}
+  410:  {seq: 419,  wt: V, segment: "IS6",             site: PyR2}
+  435:  {seq: 444,  wt: E, segment: "IS6 region",      site: none}
+  785:  {seq: 785,  wt: C, segment: "IIS1-S2 region",  site: none}
+  827:  {seq: 827,  wt: M, segment: "IIS4 region",     site: none}
+  868:  {seq: 868,  wt: N, segment: "IIS5 region",     site: none}
+  918:  {seq: 918,  wt: M, segment: "IIS4-S5 linker",  site: none}
+  923:  {seq: 923,  wt: G, segment: "IIS5 linker",     site: none}
+  925:  {seq: 925,  wt: L, segment: "IIS5",            site: none}
+  929:  {seq: 929,  wt: T, segment: "IIS5",            site: none}
+  932:  {seq: 932,  wt: L, segment: "IIS5",            site: none}
+  936:  {seq: 936,  wt: I, segment: "IIS5",            site: none}
+  982:  {seq: 982,  wt: L, segment: "IIS5-S6",         site: none}
+  989:  {seq: 989,  wt: S, segment: "IIS6",            site: none}
+  1000: {seq: 1000, wt: S, segment: "IIS6",            site: none}
+  1007: {seq: 1007, wt: A, segment: "IIS6",            site: PyR2}
+  1011: {seq: 1011, wt: I, segment: "IIS6",            site: PyR2}
+  1014: {seq: 1014, wt: L, segment: "IIS6",            site: none}
+  1016: {seq: 1016, wt: V, segment: "IIS6",            site: PyR1}
+  1520: {seq: 1544, wt: T, segment: "IIIS6 start",     site: none}
+  1532: {seq: 1556, wt: I, segment: "IIIS6",           site: none}
+  1534: {seq: 1558, wt: F, segment: "IIIS6",           site: PyR1}
+  1763: {seq: 1787, wt: D, segment: "linker III-IV",   site: none}
+
+# ---------------------------------------------------------------------------
+# SINGLE MUTATIONS, measured in an Aedes aegypti channel.
+# These are the only entries fit for both training and testing.
+# ---------------------------------------------------------------------------
+singles_aedes:
+
+  - name: V253F
+    position: 253
+    mut: F
+    channel: unstated
+    evidence: review_only
+    type_I: unknown
+    type_II: unknown
+    ddt: not_tested
+    source: "Parasites and Vectors 2025 review, s13071-025-07010-8"
+    note: >
+      The review lists V253F among mutations functionally confirmed on a
+      recombinant channel, but does not give per-class results and the primary
+      paper could not be obtained. Treat as a candidate, not a settled label.
+      Sits in PyR2 at the IS4-S5 linker (V1k11 in relative notation).
+
+  - name: V410L
+    position: 410
+    mut: L
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    ddt: not_tested
+    fold: "about 10x, alone or with F1534C"
+    source: "Haddi 2017, Sci Rep, PMC5396194"
+    note: "IS6, PyR2. Read via a summary, not the paper itself."
+
+  - name: G923V
+    position: 923
+    mut: V
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    ddt: resistant
+    source: "Zhang 2024, ScienceDirect S004835752400227X"
+    note: "IIS5 linker, outside both receptor sites. Synergy with I1011M. Abstract only."
+
+  - name: L982W
+    position: 982
+    mut: W
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    ddt: resistant
+    source: "Chen 2023, PubMed 37532317"
+    note: >
+      IIS5-S6, outside both sites. Reduced sensitivity to permethrin, bifenthrin,
+      deltamethrin, cypermethrin and DDT. Abstract only.
+
+  - name: S989P
+    position: 989
+    mut: P
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    ddt: not_tested
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: >
+      Channel-dependent. In AaNav1-1 nothing happens; see the AaNavS2 row below.
+      Because the two clones disagree, this pair should be held aside from
+      training and used as a test of whether the method is channel-blind.
+
+  - name: S989P_AaNavS2
+    position: 989
+    mut: P
+    channel: AaNavS2
+    evidence: oocyte
+    type_I: no_effect
+    type_II: resistant
+    ddt: not_tested
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: >
+      Same substitution as the row above, opposite Type II result. The review
+      attributes the difference to sequence variation between the two clones.
+
+  - name: A1007G
+    position: 1007
+    mut: G
+    channel: aedes_aegypti
+    evidence: oocyte
+    type_I: resistant
+    type_II: no_effect
+    ddt: not_tested
+    source: "Pest Manag Sci 2025, PubMed 39740097"
+    note: "IIS6, PyR2. Permethrin and bifenthrin only. Abstract only."
+
+  - name: I1011M
+    position: 1011
+    mut: M
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: no_effect
+    ddt: resistant
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: "IIS6, PyR2."
+
+  - name: I1011V
+    position: 1011
+    mut: V
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    ddt: not_tested
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: "Same position as I1011M, opposite result. Must not share a fold with it."
+
+  - name: V1016G
+    position: 1016
+    mut: G
+    channel: AaNav1-1, AaNavS2
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    ddt: resistant
+    source: "Dong and Nomura 2016; Hirata 2019, PLoS NTD pntd.0007432"
+    note: "IIS6, PyR1. Modest in both classes."
+
+  - name: V1016I
+    position: 1016
+    mut: I
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    ddt: resistant
+    source: "Hirata 2019, PLoS NTD pntd.0007432"
+    note: >
+      Harmless for pyrethroids, resistant to DDT. Gating was indistinguishable
+      from wild type. Becomes a resistance contributor with F1534C - see combinations.
+
+  - name: T1520I
+    position: 1520
+    mut: I
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    ddt: no_effect
+    source: "Hirata 2019, PLoS NTD pntd.0007432"
+    note: >
+      The only entry with no effect on anything tested. Gating indistinguishable
+      from wild type. Raises F1534C Type I resistance in combination.
+
+  - name: F1534C
+    position: 1534
+    mut: C
+    channel: BgNav1-1a, AaNav1-1, AaNavS2
+    evidence: oocyte
+    type_I: resistant
+    type_II: no_effect
+    ddt: resistant
+    source: "Dong and Nomura 2016; Hirata 2019, PLoS NTD pntd.0007432"
+    note: "IIIS6, PyR1. Low-level Type I, slight DDT. The most widespread kdr allele."
+
+  - name: D1763Y
+    position: 1763
+    mut: Y
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    ddt: not_tested
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: "Linker III-IV. Formerly D1794Y. No effect alone or with V1016G."
+
+# ---------------------------------------------------------------------------
+# SINGLE MUTATIONS, measured in another insect's channel.
+# Held-out test set only: the label was obtained in a different protein.
+# ---------------------------------------------------------------------------
+singles_other_species:
+
+  - {name: E435K,  position: 435,  mut: K, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "Single-species report."}
+  - {name: C785R,  position: 785,  mut: R, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "Single-species report."}
+  - {name: M827I,  position: 827,  mut: I, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "Single-species report. Flank differs from Musca, so treat with extra care."}
+  - {name: M918T,  position: 918,  mut: T, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "Super-kdr. More than one species, usually alongside L1014F."}
+  - {name: L925I,  position: 925,  mut: I, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "More than one species."}
+  - {name: T929I,  position: 929,  mut: I, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "More than one species."}
+  - {name: L932F,  position: 932,  mut: F, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "More than one species."}
+  - {name: I936V,  position: 936,  mut: V, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "More than one species."}
+  - {name: L1014F, position: 1014, mut: F, evidence: oocyte_other_species, type_I: unknown, type_II: unknown, ddt: not_tested, source: "Dong lab review chapter, PMC6005695, Fig 5.3A", note: "The classic kdr mutation, found across many insect orders."}
+
+  # Aedes albopictus, the closest relative with functional data.
+  - name: F1534S
+    position: 1534
+    mut: S
+    species: aedes_albopictus
+    evidence: oocyte_other_species
+    type_I: resistant
+    type_II: no_effect
+    ddt: not_tested
+    source: "Yan 2020, ScienceDirect S0965174820301004, via Pichler 2024 review"
+    note: >
+      CONTRADICTED. A later CRISPR study (Guo 2022) found deltamethrin (Type II)
+      resistance. The two methods disagree and nobody has resolved it. Good test
+      case, bad training example.
+
+  - name: F1534L
+    position: 1534
+    mut: L
+    species: aedes_albopictus
+    evidence: oocyte_other_species
+    type_I: resistant
+    type_II: no_effect
+    ddt: not_tested
+    source: "Yan 2020, ScienceDirect S0965174820301004, via Pichler 2024 review"
+    note: >
+      Also reported in Aedes aegypti in India as a field association only,
+      where the haplotype carrying it was linked to permethrin resistance
+      (odds ratio 6.27, 95% CI 2.75-14.30).
+
+# ---------------------------------------------------------------------------
+# COMBINATIONS, measured in an Aedes aegypti channel.
+# vs_singles is the interesting label: does the pair beat its strongest member?
+# This set has never been scored and is the cheapest real validation available.
+# ---------------------------------------------------------------------------
+combinations:
+
+  - name: V410L+F1534C
+    members: [V410L, F1534C]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    vs_singles: same
+    source: "Haddi 2017, Sci Rep, PMC5396194"
+    note: "About 10x, similar to V410L alone."
+
+  - name: V1016I+F1534C
+    members: [V1016I, F1534C]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    ddt: resistant
+    vs_singles: stronger
+    extends_class: "Type I -> Type I and Type II"
+    source: "Hirata 2019, PLoS NTD pntd.0007432"
+    note: >
+      The key epistasis result. V1016I alone does nothing to pyrethroids and
+      F1534C alone does not touch Type II, yet together they cover both classes.
+      About 2x more DDT resistance than either alone.
+
+  - name: T1520I+F1534C
+    members: [T1520I, F1534C]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: no_effect
+    vs_singles: stronger
+    source: "Hirata 2019, PLoS NTD pntd.0007432"
+    note: >
+      T1520I alone affects nothing, yet raises F1534C resistance to permethrin,
+      bifenthrin and NRDC 157. Still sensitive to cypermethrin and beta-cyfluthrin.
+
+  - name: S989P+V1016G
+    members: [S989P, V1016G]
+    channel: AaNavS2
+    evidence: oocyte
+    type_I: not_tested
+    type_II: resistant
+    vs_singles: stronger
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: "S989P enhanced V1016G deltamethrin resistance. No effect in AaNav1-1."
+
+  - name: S989P+V1016G+F1534C
+    members: [S989P, V1016G, F1534C]
+    channel: AaNavS2
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    vs_singles: stronger
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: "Greater than any of the three alone. Found in one Taiwanese mosquito in 2022."
+
+  - name: D1763Y+V1016G
+    members: [D1763Y, V1016G]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: no_effect
+    type_II: no_effect
+    vs_singles: same
+    source: "Dong and Nomura 2016, Insects 7(4):60"
+    note: >
+      A negative combination control. D1763Y adds nothing to V1016G, which shows
+      that a no-effect mutation does not always become a contributor in company.
+
+  - name: L982W+F1534C
+    members: [L982W, F1534C]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: resistant
+    type_II: resistant
+    vs_singles: same
+    source: "Chen 2023, PubMed 37532317"
+    note: "No greater than L982W alone. The second negative combination control."
+
+  - name: G923V+I1011M
+    members: [G923V, I1011M]
+    channel: AaNav1-1
+    evidence: oocyte
+    type_I: unknown
+    type_II: unknown
+    vs_singles: stronger
+    source: "Zhang 2024, ScienceDirect S004835752400227X"
+    note: "Synergy reported. Abstract only, so the per-class result is unknown."
+
+# ---------------------------------------------------------------------------
+# FIELD REPORTS ONLY - no functional measurement anywhere.
+# NOT labels. Kept here so they can be scored and so nobody mistakes them
+# for training data later.
+# ---------------------------------------------------------------------------
+field_only:
+
+  - name: R52H
+    position: 52
+    mut: H
+    species: aedes_aegypti
+    evidence: field
+    source: "Taiwan 2026, PLoS NTD pntd.0014393"
+    note: >
+      Higher in survivors (0.077 vs 0) but not significant; too rare during
+      selection to correlate with LC50. Averaged 0.265 in southern Taiwan 2024.
+      Travels with S989P+V1016G in 59% of cases. Outside both receptor sites.
+
+  - name: N868D
+    position: 868
+    mut: D
+    species: aedes_aegypti
+    evidence: selection
+    source: "Taiwan 2026, PLoS NTD pntd.0014393"
+    note: >
+      Strongest of the unmeasured candidates. Frequency rose 0.125 to 0.5 over
+      five generations of cypermethrin selection and was the only mutation
+      correlating with LC50. Enriched in survivors, 0.197 vs 0.067. Travels with
+      F1534C in 91% of cases. Authors state functional validation is required.
+
+  # Aedes albopictus, reported in populations, never functionally tested.
+  - {name: V410A,  position: 410,  mut: A, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: V410G,  position: 410,  mut: G, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: S989Y,  position: 989,  mut: Y, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: S1000Y, position: 1000, mut: Y, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: I1532T, position: 1532, mut: T, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580", note: "Now tracked alongside F1534C across Europe."}
+  - {name: F1534R, position: 1534, mut: R, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: F1534W, position: 1534, mut: W, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+  - {name: F1534I, position: 1534, mut: I, species: aedes_albopictus, evidence: field, source: "Pichler 2024, PMC11078580"}
+
+# ---------------------------------------------------------------------------
+# HAPLOTYPES OBSERVED IN WILD POPULATIONS.
+# No functional test. These are the combinations worth predicting, because
+# a prediction here is immediately useful and no laboratory has one.
+# ---------------------------------------------------------------------------
+observed_haplotypes:
+
+  india:    # Kushwah 2025, PLoS NTD pntd.0013126. 3,232 mosquitoes, 7 haplotypes.
+    - {code: SBVTC, members: [F1534C],                   count: 1018}
+    - {code: SAVTF, members: [],                         count: 947,  note: "wild type"}
+    - {code: SBVTF, members: [],                         count: 438,  note: "wild type, other intron"}
+    - {code: SBVIC, members: [T1520I, F1534C],           count: 365}
+    - {code: PAGTF, members: [S989P, V1016G],            count: 249}
+    - {code: SAVTL, members: [F1534L],                   count: 194}
+    - {code: SAGTF, members: [V1016G],                   count: 21}
+
+  taiwan:   # Hsu 2025, PLoS NTD pntd.0012768. 2016-2023.
+    - {code: SVTFD, members: [],                                 freq: "about 70% in 2016, absent by 2020", note: "wild type"}
+    - {code: PGTFD, members: [S989P, V1016G],                    freq: "rose about 10.5-fold, to 48%"}
+    - {code: SVTCD, members: [F1534C],                           freq: "peaked 53% in 2018, 34.5% by 2023"}
+    - {code: SGTFY, members: [V1016G, D1763Y],                   freq: "10.4% to 16.9%"}
+    - {code: SVICD, members: [T1520I, F1534C],                   freq: "0.5% in 2016 to 9.5%"}
+    - {code: SGTFD, members: [V1016G],                           freq: "5.7% in March 2016, then below 1%"}
+    - {code: PGTFY, members: [S989P, V1016G, D1763Y],            freq: "0.25% to 5.21%", note: "first report in the species"}
+    - {code: PGTCD, members: [S989P, V1016G, F1534C],            freq: "one individual, 2022"}
+
+# ---------------------------------------------------------------------------
+# LINKAGE, from the two surveys above. Relevant because it bounds how large
+# database 3 needs to be: these positions do not assort freely.
+# ---------------------------------------------------------------------------
+linkage_notes:
+  - "T1520I is only ever observed alongside F1534C, in both India and Taiwan."
+  - "D1763Y is only ever observed alongside V1016G."
+  - "S989P is only ever observed alongside V1016G."
+  - "India found no recombination among the V1016G, F1534L and F1534C haplogroups."
+  - "L982W, A1007G and I1011M were not detected at all in the Taiwanese survey."

@@ -1,0 +1,10 @@
+pyyaml>=6.0
+requests>=2.31
+mini3di>=0.2.1
+biopython>=1.83
+# Added on your own machine, when you get to step 03:
+#   torch
+#   transformers
+# (SaProt-650M is loaded via HuggingFace transformers; exact package
+# versions should follow the SaProt repo's own requirements:
+# https://github.com/westlake-repl/SaProt)

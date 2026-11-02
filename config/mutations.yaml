@@ -1,0 +1,34 @@
+# Confirmed Ae. aegypti VGSC mutations, copied from the reference deck (slide 2).
+# 'position' = number used in the papers (house-fly / Musca domestica numbering).
+# 'seq_position' = the same residue in UniProt C3RTM2, found by aligning to Musca Q94615.
+# Where seq_position is missing, the two numbers are identical (checked for 982, 989, 1011, 1016).
+# Labels come from oocyte electrophysiology / CRISPR only.
+#   resistant      = confirmed positive
+#   not_resistant  = confirmed negative (no effect in oocytes)
+#   hold_aside     = ambiguous; score it, but do NOT count it as positive/negative
+# 'group: other_species' = label comes from another insect; no group = tested in Ae. aegypti channels
+
+window_residues: 500      # +/- residues around each mutation (clipped at the structure ends)
+
+mutations:
+  - {name: V410L,  position: 410,  seq_position: 419,  wt: V, mut: L, label: resistant,     note: "IS6 / PyR2. Oocyte test (Haddi 2017, Sci Rep): alone or with F1534C, about 10-fold less sensitive to permethrin and deltamethrin (read via summary)"}
+  - {name: L982W,  position: 982,  wt: L, mut: W, label: resistant,     note: "IIS5-S6, super-resistant with F1534C. Confirmed in Xenopus oocytes (PubMed 37532317, abstract read): L982W alone reduced sensitivity to permethrin, bifenthrin, deltamethrin, cypermethrin and DDT; no extra effect with F1534C. Also colony bioassays (alone 52-75 fold permethrin, Vietnam PLoS One 2023)"}
+  - {name: I1011M, position: 1011, wt: I, mut: M, label: resistant,     note: "IIS6 / PyR2, Type I only (confirmed again in oocytes: resistant to Type I and DDT, not Type II)"}
+  - {name: V1016G, position: 1016, wt: V, mut: G, label: resistant,     note: "IIS6 / PyR1, moderate both types, SE Asia"}
+  - {name: F1534C, position: 1534, seq_position: 1558,wt: F, mut: C, label: resistant,     note: "IIIS6 / PyR1, Type I and DDT, widespread"}
+  - {name: A1007G, position: 1007, wt: A, mut: G, label: resistant,     note: "IIS6 / PyR2. Oocytes, Ae. aegypti (Pest Manag Sci 2025, PubMed 39740097, abstract read): alone reduced sensitivity to Type I (permethrin, bifenthrin), no effect on Type II (deltamethrin, cypermethrin). Counts as resistant for Type I, same as I1011M and F1534C"}
+  - {name: G923V,  position: 923,  wt: G, mut: V, label: resistant,     note: "IIS5 linker. Oocytes, AaNav1-1 (abstract read; ScienceDirect S004835752400227X): alone reduced sensitivity to Type I and Type II pyrethroids and DDT; synergy with I1011M. Position checked: G923 in house fly and in C3RTM2, flank MGRTMGALGNL identical"}
+  - {name: E435K, position: 435, seq_position: 444, wt: E, mut: K, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. Single-species report. Position matched by alignment (same +9 offset as V410L); flank EEAAEEEA[I/L]"}
+  - {name: C785R, position: 785, wt: C, mut: R, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. Single-species report. Position checked: C785 in house fly and C3RTM2, flank CVWDCCWVW identical"}
+  - {name: M827I, position: 827, wt: M, mut: I, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. Single-species report. Position matched by alignment; wt M matches but the flank differs (DHHDMNPEL vs DHHDMDPDM), so treat with extra care"}
+  - {name: M918T, position: 918, wt: M, mut: T, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. Super-kdr, more than one species. Position checked: flank LISIMGRTM identical"}
+  - {name: L925I, position: 925, wt: L, mut: I, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. More than one species. Position checked: flank TMGALGNLT identical"}
+  - {name: T929I, position: 929, wt: T, mut: I, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. More than one species. Position checked: flank LGNLTFVLC identical"}
+  - {name: L932F, position: 932, wt: L, mut: F, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. More than one species. Position checked: flank LTFVLCIII identical"}
+  - {name: I936V, position: 936, wt: I, mut: V, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. More than one species. Position checked: flank LCIIIFIFA identical"}
+  - {name: L1014F, position: 1014, wt: L, mut: F, label: resistant, group: other_species, note: "Confirmed in Xenopus oocytes in other insects, reduces pyrethroid sensitivity (Dong lab review chapter, PMC6005695, Fig 5.3A; house-fly numbering). Not tested in Ae. aegypti channels. Classic kdr, more than one species. Position checked: flank VIGNLVVLN identical"}
+  - {name: I1011V, position: 1011, wt: I, mut: V, label: not_resistant, note: "same site as I1011M, no effect"}
+  - {name: V1016I, position: 1016, wt: V, mut: I, label: not_resistant, note: "no effect alone, epistatic with F1534C"}
+  - {name: D1763Y, position: 1763, seq_position: 1787,wt: D, mut: Y, label: not_resistant, note: "Alone or with V1016G, no resistance to permethrin/deltamethrin in AaNav1-1 channels (review). Old name D1794Y. Position matched by alignment to Musca; flank HVK[E/D]KSG is conserved, so the match is solid (checked)"}
+  - {name: T1520I, position: 1520, seq_position: 1544,wt: T, mut: I, label: not_resistant, note: "Alone: no change to permethrin, deltamethrin or DDT sensitivity in AaNav1-1 oocytes (PLoS NTD 2019, read via summary). Position matched by alignment (same +24 offset as F1534C)"}
+  - {name: S989P,  position: 989,  wt: S, mut: P, label: hold_aside,    note: "effect seen only in AaNav-S2 oocytes; isoform in field unknown"}
